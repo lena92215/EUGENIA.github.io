@@ -407,6 +407,146 @@
             </div>
         </div>
     </div>
+    <!-- ========================================== -->
+    <!-- 🌟 黑膠唱片點唱機彈出視窗 (Vinyl Jukebox Modal) -->
+    <!-- ========================================== -->
+    <div id="modal-playlist" class="fixed inset-0 bg-slate-900/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-playlist')">
+        <div class="bg-slate-950 text-white rounded-[36px] max-w-2xl w-full p-6 md:p-8 border-4 border-purple-300 shadow-2xl relative max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl" onclick="closeModal('modal-playlist')">✕</button>
+            
+            <div class="text-center mb-6">
+                <span class="text-xs font-y2k font-bold text-y2k-pink tracking-widest uppercase">★ Retro Vinyl Jukebox ★</span>
+                <h3 class="text-xl font-bold mt-1 text-white">晴欣的微光民謠唱片機</h3>
+                <p class="text-[10px] text-slate-400 mt-1">選一張黑膠，潛入如同 Mystery of Love 的空靈溫柔世界</p>
+            </div>
+
+            <!-- 10張專輯展示網格 -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+                
+                <!-- 專輯 1 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <!-- Unsplash 意境封面 -->
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Carrie & Lowell</p>
+                    <p class="text-[9px] text-slate-450 truncate">Sufjan Stevens</p>
+                </div>
+
+                <!-- 專輯 2 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Helplessness Blues</p>
+                    <p class="text-[9px] text-slate-450 truncate">Fleet Foxes</p>
+                </div>
+
+                <!-- 專輯 3 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">For Emma, Forever Ago</p>
+                    <p class="text-[9px] text-slate-450 truncate">Bon Iver</p>
+                </div>
+
+                <!-- 專輯 4 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Punisher</p>
+                    <p class="text-[9px] text-slate-450 truncate">Phoebe Bridgers</p>
+                </div>
+
+                <!-- 專輯 5 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Tomb</p>
+                    <p class="text-[9px] text-slate-450 truncate">Angelo De Augustine</p>
+                </div>
+
+                <!-- 專輯 6 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Titanic Rising</p>
+                    <p class="text-[9px] text-slate-450 truncate">Weyes Blood</p>
+                </div>
+
+                <!-- 專輯 7 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">The Shepherd's Dog</p>
+                    <p class="text-[9px] text-slate-450 truncate">Iron & Wine</p>
+                </div>
+
+                <!-- 專輯 8 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Cannot Be, Whatsoever</p>
+                    <p class="text-[9px] text-slate-450 truncate">Novo Amor</p>
+                </div>
+
+                <!-- 專輯 9 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1487180142328-0c4e37023af5?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Cigarettes After Sex</p>
+                    <p class="text-[9px] text-slate-450 truncate">Cigarettes After Sex</p>
+                </div>
+
+                <!-- 專輯 10 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="relative aspect-square rounded-xl overflow-hidden border border-slate-700 shadow-lg group-hover:scale-105 transition-all">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=150&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+                            <span class="text-xl">▶</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] font-bold mt-2 truncate text-slate-200">Quiet Is the New Loud</p>
+                    <p class="text-[9px] text-slate-450 truncate">Kings of Convenience</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script>
         // 🌟 A. 入口分流控制函式
         function enterEnterprise() {
