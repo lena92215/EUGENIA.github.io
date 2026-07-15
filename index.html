@@ -191,56 +191,63 @@
                 </div>
             </div>
 
-            <!-- 右側：技能樹與語言證照展示 -->
-            <div class="md:col-span-2 space-y-6">
-                <!-- 語言與工工證照展示 -->
-                <div class="bg-white/65 backdrop-blur-md p-5 rounded-3xl border-2 border-white/50 shadow-lg space-y-3">
-                    <div class="flex items-center gap-2 mb-1">
-                        <span class="text-lg">🪪</span>
-                        <h4 class="font-y2k font-bold text-sm tracking-wide text-cyan-700">LANGUAGES & CERTIFICATIONS (語言與專業證照)</h4>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="bg-white/80 p-3 rounded-xl border border-cyan-150 flex items-center gap-3 shadow-sm">
-                            <div class="text-2xl text-cyan-500">🗣️</div>
-                            <div>
-                                <span class="text-[10px] text-cyan-600 font-bold block">英文能力</span>
-                                <span class="text-xs font-bold text-slate-800">多益 TOEIC 藍色證書</span>
-                            </div>
-                        </div>
-                        <div class="bg-white/80 p-3 rounded-xl border border-purple-150 flex items-center gap-3 shadow-sm">
-                            <div class="text-2xl text-purple-500">📜</div>
-                            <div>
-                                <span class="text-[10px] text-purple-600 font-bold block">品管專業證照</span>
-                                <span class="text-xs font-bold text-slate-800">品質工程師 CQE</span>
-                            </div>
-                        </div>
-                        <div class="bg-white/80 p-3 rounded-xl border border-pink-150 flex items-center gap-3 shadow-sm">
-                            <div class="text-2xl text-pink-500">⚡</div>
-                            <div>
-                                <span class="text-[10px] text-pink-600 font-bold block">精實生產</span>
-                                <span class="text-xs font-bold text-slate-800">Lean Six Sigma 證照</span>
-                            </div>
-                        </div>
-                        <div class="bg-white/80 p-3 rounded-xl border border-yellow-150 flex items-center gap-3 shadow-sm">
-                            <div class="text-2xl text-yellow-600">📊</div>
-                            <div>
-                                <span class="text-[10px] text-yellow-600 font-bold block">模擬工具</span>
-                                <span class="text-xs font-bold text-slate-800">Arena / Python 數據分析</span>
-                            </div>
-                        </div>
-                    </div>
+            <!-- 右側：重新調整的四個證照與工具 TITLE 區塊 (1 分鐘掃描區) -->
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="text-lg">🪪</span>
+                    <h4 class="font-y2k font-bold text-sm tracking-wide text-cyan-700">CORE SKILLS & CREDENTIALS</h4>
                 </div>
-
-                <!-- 核心專長列表 -->
+                
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-md hover:border-pink-300 transition-all">
-                        <h4 class="font-bold text-slate-800 text-xs mb-1">⚙️ 現場診斷與瓶頸優化</h4>
-                        <p class="text-[11px] text-slate-600">熟練運用時間研究、產線平衡法、價值流程圖 (VSM) 與精實生產手法排除產能瓶頸。</p>
+                    
+                    <!-- Title 1: 語言能力證照 -->
+                    <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-pink-300 transition-all cursor-pointer group" onclick="openModal('modal-lang')">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xl">🗣️</span>
+                            <span class="text-[9px] text-pink-500 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 text-xs mb-1">語言能力證照</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed">
+                            英文（多益能力證明）、西文（西班牙語檢定/學習證明）
+                        </p>
                     </div>
-                    <div class="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-md hover:border-purple-300 transition-all">
-                        <h4 class="font-bold text-slate-800 text-xs mb-1">🌱 永續碳盤查規劃</h4>
-                        <p class="text-[11px] text-slate-600">掌握 ISO 14064-1 組織溫室氣體盤查規範、活動數據邊界界定，具備盤查實務規劃能力。</p>
+
+                    <!-- Title 2: 相關專業證照 -->
+                    <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-purple-300 transition-all cursor-pointer group" onclick="openModal('modal-pro')">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xl">📜</span>
+                            <span class="text-[9px] text-purple-500 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 text-xs mb-1">相關專業證照</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed">
+                            工業工程、精實工程、服務管理、智慧製造、永續相關證照
+                        </p>
                     </div>
+
+                    <!-- Title 3: ipas 證照 -->
+                    <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-cyan-300 transition-all cursor-pointer group" onclick="openModal('modal-ipas')">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xl">⚡</span>
+                            <span class="text-[9px] text-cyan-600 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 text-xs mb-1">ipas 專業工程師認證</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed">
+                            經濟部產業人才能力鑑定（ipas）相關專業工程師合格證明
+                        </p>
+                    </div>
+
+                    <!-- Title 4: 工具掌握 -->
+                    <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-yellow-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xl">📊</span>
+                            <span class="text-[9px] text-slate-400 font-bold font-mono">精通工具</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 text-xs mb-1">工具軟體掌握</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed">
+                            FlexSim（3D 系統模擬規劃）、Minitab（統計品管分析與實驗設計）
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
@@ -589,5 +596,73 @@
             }
         });
     </script>
+    <!-- ========================================== -->
+    <!-- 🌟 新增的證照彈出視窗 (Credentials Modals) -->
+    <!-- ========================================== -->
+
+    <!-- 語言能力證照彈出視窗 -->
+    <div id="modal-lang" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-lang')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-pink-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-lang')">✕</button>
+            <span class="bg-pink-100 text-pink-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">Language Certificates</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">語言能力證明</h3>
+            <div class="space-y-4 text-xs text-slate-600 leading-relaxed">
+                <div class="bg-pink-50/30 p-3 rounded-xl border border-pink-100">
+                    <p class="font-bold text-slate-800 mb-1">🇺🇸 英文能力證明</p>
+                    <p>多益 TOEIC 藍色證書（分數：XXX分）- 具備流暢國際職場與學術文獻閱讀能力。</p>
+                </div>
+                <div class="bg-purple-50/30 p-3 rounded-xl border border-purple-100">
+                    <p class="font-bold text-slate-800 mb-1">🇪🇸 西班牙文能力證明</p>
+                    <p>西文相關等級檢定 / 學習合格證明。具備基礎商務與日常對話能力。</p>
+                </div>
+                <p class="text-[10px] text-gray-400 italic">⚠️ 提示：晴欣可於此區上傳並嵌入妳的證照掃描檔圖片 &lt;img src="圖片名稱.jpg" class="w-full rounded-lg mt-2"&gt;</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 相關專業證照彈出視窗 -->
+    <div id="modal-pro" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-pro')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-purple-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-pro')">✕</button>
+            <span class="bg-purple-100 text-purple-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">IE Certifications</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">相關專業證照</h3>
+            <div class="space-y-3 text-xs text-slate-600">
+                <div class="grid grid-cols-1 gap-2">
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">⚙️ 工業工程（IE）相關認證</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">學會/公會授與之工業工程師專業資格。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">⚡ 精實工程（Lean Six Sigma）</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">精實改善、綠帶/黃帶等流程消除浪費手法認證。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">🛎️ 服務管理相關認證</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">系統化服務業優化與顧客體驗管理專業資格。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">🤖 智慧製造 / 永續相關</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">智慧製造系統工程、ESG / 溫室氣體盤查培訓合格證明。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ipas 證照彈出視窗 -->
+    <div id="modal-ipas" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-ipas')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-cyan-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-ipas')">✕</button>
+            <span class="bg-cyan-100 text-cyan-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">ipas Certificates</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">經濟部 ipas 專業工程師證照</h3>
+            <div class="space-y-4 text-xs text-slate-600 leading-relaxed">
+                <p>經濟部主導之 **產業人才能力鑑定 (ipas)**，是台灣半導體、電子與製造大廠在招募時高度認可的國家級專業證照：</p>
+                <div class="bg-cyan-50/30 p-3 rounded-xl border border-cyan-100">
+                    <p class="font-bold text-slate-800">✦ 鑑定合格項目：</p>
+                    <p class="mt-1">已取得工業工程、智慧製造或永續發展相關範疇之 **ipas 專業工程師** 合格證書。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
