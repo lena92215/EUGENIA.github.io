@@ -156,10 +156,10 @@
         <header class="pt-36 pb-16 px-6 max-w-5xl mx-auto flex flex-col justify-center min-h-[70vh] relative">
             <div class="flex flex-wrap gap-2 mb-4">
                 <span class="bg-white/60 backdrop-blur-sm text-pink-600 border border-pink-200 text-[10px] md:text-xs px-3 py-1.5 rounded-full font-y2k font-bold tracking-wider">
-                    ★ FENG CHIA IE & SYSTEM MANAGEMENT
+                    ★ FENG CHIA UNIVERSITY
                 </span>
                 <span class="bg-white/60 backdrop-blur-sm text-purple-600 border border-purple-200 text-[10px] md:text-xs px-3 py-1.5 rounded-full font-y2k font-bold tracking-wider">
-                    💿 PORTFOLIO 2026
+                    💿 INDUSTRAL ENGEERING & SYSTEM MANAGEMENT
                 </span>
             </div>
             
@@ -173,7 +173,7 @@
                 
                 <p class="text-base md:text-lg text-slate-700 max-w-2xl font-semibold leading-relaxed bg-white/55 p-4 rounded-2xl backdrop-blur-md border border-white/50 shadow-sm">
                     你好！我是晴欣。目前就讀於逢甲大學工業工程與系統管理學系碩士班。
-                    我喜愛將「精實的系統邏輯」結合「數據洞察」，以工程視角和永續思維，把繁雜的現場瓶頸、市場調查與碳盤查標準，轉化為直覺、高效的優化方案。
+                    將「精實的系統邏輯」結合「數據洞察」，以工程視角和永續思維，把繁雜的現場瓶頸、市場調查與碳盤查標準，轉化為直覺、高效的優化方案。
                 </p>
                 
                 <div class="pt-2 flex flex-wrap gap-4">
@@ -199,27 +199,63 @@
                     <hr class="border-white/60">
                     <p class="text-xs text-slate-700 leading-relaxed font-medium">在工工領域中，我深信「能被定義的，就能被優化」。</p>
                 </div>
+              <!-- 右側：重新調整的四個證照與工具 TITLE 區塊 (1 分鐘掃描區) -->
                 <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-lg">🪪</span>
+                        <h4 class="font-y2k font-bold text-sm tracking-wide text-cyan-700">CORE SKILLS & CREDENTIALS</h4>
+                    </div>
+                    
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md cursor-pointer" onclick="openModal('modal-lang')">
-                            <h4 class="font-bold text-slate-800 text-xs mb-1">🗣️ 語言能力證照</h4>
-                            <p class="text-[11px] text-slate-600 leading-relaxed">英文（多益能力證明）、西文（西班牙語檢定/學習證明）</p>
+                        <!-- Title 1: 語言能力證照 -->
+                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-pink-300 transition-all cursor-pointer group" onclick="openModal('modal-lang')">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xl">🗣️</span>
+                                <span class="text-[9px] text-pink-500 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-xs mb-1">語言能力證照</h4>
+                            <p class="text-[11px] text-slate-600 leading-relaxed">
+                                英文（多益能力證明）、西文（西班牙語檢定/學習證明）
+                            </p>
                         </div>
-                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md cursor-pointer" onclick="openModal('modal-pro')">
-                            <h4 class="font-bold text-slate-800 text-xs mb-1">📜 相關專業證照</h4>
-                            <p class="text-[11px] text-slate-600 leading-relaxed">工業工程、精實工程、服務管理、智慧製造、永續相關證照</p>
+
+                        <!-- Title 2: 相關專業證照 -->
+                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-purple-300 transition-all cursor-pointer group" onclick="openModal('modal-pro')">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xl">📜</span>
+                                <span class="text-[9px] text-purple-500 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-xs mb-1">相關專業證照</h4>
+                            <p class="text-[11px] text-slate-600 leading-relaxed">
+                                工業工程、精實工程、服務管理、智慧製造、永續相關證照
+                            </p>
                         </div>
-                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md cursor-pointer" onclick="openModal('modal-ipas')">
-                            <h4 class="font-bold text-slate-800 text-xs mb-1">⚡ ipas 專業工程師認證</h4>
-                            <p class="text-[11px] text-slate-600 leading-relaxed">經濟部產業人才能力鑑定相關專業工程師合格證明</p>
+
+                        <!-- Title 3: ipas 證照 -->
+                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-cyan-300 transition-all cursor-pointer group" onclick="openModal('modal-ipas')">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xl">⚡</span>
+                                <span class="text-[9px] text-cyan-600 font-bold font-mono group-hover:translate-x-1 transition-transform">點擊看證明 ➔</span>
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-xs mb-1">ipas 專業工程師認證</h4>
+                            <p class="text-[11px] text-slate-600 leading-relaxed">
+                                經濟部產業人才能力鑑定（ipas）相關專業工程師合格證明
+                            </p>
                         </div>
-                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md">
-                            <h4 class="font-bold text-slate-800 text-xs mb-1">📊 工具軟體掌握</h4>
-                            <p class="text-[11px] text-slate-600 leading-relaxed">FlexSim（3D 系統模擬規劃）、Minitab（統計品管分析與實驗設計）</p>
+
+                        <!-- Title 4: 工具掌握 -->
+                        <div class="bg-white/70 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-md hover:border-yellow-300 transition-all group">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xl">📊</span>
+                                <span class="text-[9px] text-slate-400 font-bold font-mono">精通工具</span>
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-xs mb-1">工具軟體掌握</h4>
+                            <p class="text-[11px] text-slate-600 leading-relaxed">
+                                FlexSim（3D 系統模擬規劃）、Minitab（統計品管分析與實驗設計）
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </div>
 
@@ -292,7 +328,75 @@
             </button>
         </section>
     </div>
+<!-- 語言能力證照彈出視窗 -->
+    <div id="modal-lang" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-lang')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-pink-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-lang')">✕</button>
+            <span class="bg-pink-100 text-pink-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">Language Certificates</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">語言能力證明</h3>
+            <div class="space-y-4 text-xs text-slate-600 leading-relaxed">
+                <div class="bg-pink-50/30 p-3 rounded-xl border border-pink-100">
+                    <p class="font-bold text-slate-800 mb-1">🇺🇸 英文能力證明</p>
+                    <p>多益 TOEIC 藍色證書。具備流暢國際職場與學術文獻閱讀能力。</p>
+                </div>
+                <div class="bg-purple-50/30 p-3 rounded-xl border border-purple-100">
+                    <p class="font-bold text-slate-800 mb-1">🇪🇸 西班牙文能力證明</p>
+                    <p>西班牙語相關檢定 / 學習合格證明。具備基礎商務與日常對話能力。</p>
+                </div>
+                <p class="text-[10px] text-gray-400 italic">⚠️ 提示：若有證照圖片，可在這行下方使用 &lt;img src="證照照片.jpg" class="w-full rounded-lg mt-2"&gt; 來呈現。</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- 相關專業證照彈出視窗 -->
+    <div id="modal-pro" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-pro')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-purple-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-pro')">✕</button>
+            <span class="bg-purple-100 text-purple-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">IE Certifications</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">相關專業證照</h3>
+            <div class="space-y-3 text-xs text-slate-600">
+                <p class="text-gray-500 mb-2">已修習並取得以下工業工程領域專業知識認證：</p>
+                <div class="grid grid-cols-1 gap-2">
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">⚙️ 工業工程 (Industrial Engineering)</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">現場工程改善、製程規劃與產線配置能力證明。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">⚡ 精實工程 (Lean Engineering)</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">流程浪費消除、精實六標準差改善工具應用。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">🛎️ 服務管理 (Service Management)</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">服務系統設計、優化顧客服務體驗與流程績效。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">🤖 智慧製造 (Smart Manufacturing)</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">自動化與數位化工廠建模、智慧排程與系統整合分析。</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-150">
+                        <strong class="text-slate-800">🌱 永續發展 (Sustainability)</strong>
+                        <p class="text-[11px] text-slate-500 mt-0.5">企業永續發展綠色意識、ISO 14064 溫室氣體盤查基礎合格訓練。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ipas 證照彈出視窗 -->
+    <div id="modal-ipas" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="closeModal('modal-ipas')">
+        <div class="bg-white rounded-[32px] max-w-md w-full p-6 border-4 border-cyan-200 shadow-2xl relative max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation();">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg" onclick="closeModal('modal-ipas')">✕</button>
+            <span class="bg-cyan-100 text-cyan-700 font-bold text-[10px] px-2.5 py-1 rounded-full uppercase">ipas Certificates</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-2 mb-4">經濟部 ipas 專業工程師證照</h3>
+            <div class="space-y-4 text-xs text-slate-600 leading-relaxed">
+                <p>經濟部主導之 **產業人才能力鑑定 (ipas)**，是台灣指標性半導體與電子科技大廠在徵才時高度認可的國家級專業人才憑證：</p>
+                <div class="bg-cyan-50/30 p-3 rounded-xl border border-cyan-100">
+                    <p class="font-bold text-slate-800">✦ 鑑定合格項目：</p>
+                    <p class="mt-1">已考取工業工程、智慧製造、或是企業永續發展等符合工工與管理領域範疇之 **ipas 專業工程師** 合格認證。</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         // 🌟 A. 入口分流控制函式
         function enterEnterprise() {
