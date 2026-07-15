@@ -181,7 +181,7 @@
                         進入作品專案 ➔
                     </button>
                     <button onclick="switchView('about')" class="bg-white/80 hover:bg-white text-slate-700 font-y2k font-bold px-6 py-3.5 rounded-2xl border-2 border-purple-200 transition-all shadow-md">
-                        查看專業證照 🪪
+                        查看專業證照 ➔
                     </button>
                 </div>
             </div>
@@ -285,11 +285,95 @@
         </section>
     </div>
 
+   <!-- ========================================== -->
+    <!-- 🌟 分頁 4: 簡報與邏輯視覺化藝廊 (Slides View) -->
+    <!-- ========================================== -->
     <div id="view-slides" class="page-view animate-fade-in hidden flex-grow">
         <section class="pt-36 pb-12 px-6 max-w-5xl mx-auto">
-            <div class="bg-slate-900 text-white rounded-[40px] p-8">
-                <h2 class="text-xl font-bold mb-4">簡報設計與邏輯視覺化藝廊</h2>
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold tracking-widest text-cyan-600 bg-white/80 px-3 py-1 rounded-full shadow-sm">Slide Portfolio</span>
+                <h2 class="text-2xl md:text-3xl font-y2k font-bold text-slate-900 mt-2">簡報設計與邏輯視覺化藝廊</h2>
+                <p class="text-slate-700 text-xs mt-1">精選我實作過的簡報頁面，呈現我如何將繁雜數據轉譯為高效、易讀的決策視覺。</p>
+            </div>
+
+            <!-- 簡報逐一展示清單 (垂直大圖排版，適合手機與桌機細讀) -->
+            <div class="space-y-12">
+
+                <div class="bg-white/80 backdrop-blur-md rounded-3xl p-6 y2k-holo-border-pink flex flex-col lg:flex-row gap-6 items-center">
+    
+    <div class="w-full lg:w-3/5 aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 shadow-2xl relative group">
+        
+        <img id="p1-img" src="p1_slide1.png" onerror="this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop&q=60'" class="w-full h-full object-cover transition-all duration-300">
+        
+        <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-slate-900/60 hover:bg-slate-900/80 text-white rounded-full flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        
+        <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-slate-900/60 hover:bg-slate-900/80 text-white rounded-full flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="absolute bottom-3 right-3 bg-slate-900/80 text-white text-[10px] px-3 py-1.5 rounded-full font-mono flex items-center gap-2">
+            <span class="text-pink-400 font-bold">SLIDE</span>
+            <span id="p1-counter">1 / 5</span>
+        </div>
+    </div>
+
+    <div class="w-full lg:w-2/5 space-y-3">
+        <span class="text-[10px] font-bold text-pink-600 bg-pink-50 px-2 py-1 rounded-md">★ 畢業專題簡報</span>
+        <h3 class="text-lg font-bold text-slate-900">檢測產線改善前後 VSM 對比簡報</h3>
+        <p class="text-xs text-slate-600 leading-relaxed font-medium">
+            點擊左側簡報的左右箭頭，即可一頁頁線上細讀我的專案簡報！這份簡報詳細記錄了我運用 VSM 與 IE 七大手法，幫產線消除等待時間、重新分配工序的完整改善思維。
+        </p>
+        <div class="bg-pink-50/50 p-3 rounded-xl border border-pink-100 text-[11px] text-slate-500">
+            <strong>📊 播放操作說明：</strong>滑鼠移入簡報畫面上，即可看見「左右切換按鈕」；在手機上也可以直接點擊邊緣來翻頁喔！
+        </div>
+    </div>
+</div>
+
+                <!-- 簡報 2 -->
+                <div class="bg-white/80 backdrop-blur-md rounded-3xl p-6 y2k-holo-border-purple flex flex-col lg:flex-row gap-6 items-center">
+                    <!-- 左側：簡報大圖 (比例 16:9) -->
+                    <div class="w-full lg:w-3/5 aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative group">
+                        <!-- ⚠️ 請將第二張簡報存成 slide2.png -->
+                        <img src="slide2.png" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60'" class="w-full h-full object-cover group-hover:scale-[1.02] transition-all duration-300">
+                        <div class="absolute bottom-3 left-3 bg-slate-900/80 text-white text-[10px] px-2 py-1 rounded-md">Slide 02 // Consumer Research</div>
+                    </div>
+                    <!-- 右側：工工思維解析 -->
+                    <div class="w-full lg:w-2/5 space-y-3">
+                        <span class="text-[10px] font-bold text-purple-600 bg-purple-50 px-2 py-1 rounded-md">★ 研究所產品開發簡報</span>
+                        <h3 class="text-lg font-bold text-slate-900">消費者午餐習慣問卷交叉分析</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">
+                            這頁簡報展示了我們回收 300 份問卷後的量化統計成果。我利用 Minitab 產出數據，並在簡報上將數字提煉成三大「直覺式消費者痛點指標」，直接與新產品的設計規格做邏輯關聯，成功說服評審委員。
+                        </p>
+                        <div class="bg-purple-50/50 p-3 rounded-xl border border-purple-100 text-[11px] text-slate-500">
+                            <strong>📊 視覺化核心：</strong>不堆疊原始表格，改以「百分比亮點標記」和「3D 概念圖對應」，直接把統計數字翻譯成市場需求。
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 簡報 3 -->
+                <div class="bg-white/80 backdrop-blur-md rounded-3xl p-6 y2k-holo-border-blue flex flex-col lg:flex-row gap-6 items-center">
+                    <!-- 左側：簡報大圖 (比例 16:9) -->
+                    <div class="w-full lg:w-3/5 aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative group">
+                        <!-- ⚠️ 請將第三張簡報存成 slide3.png -->
+                        <img src="slide3.png" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=60'" class="w-full h-full object-cover group-hover:scale-[1.02] transition-all duration-300">
+                        <div class="absolute bottom-3 left-3 bg-slate-900/80 text-white text-[10px] px-2 py-1 rounded-md">Slide 03 // ESG Timeline</div>
+                    </div>
+                    <!-- 右側：工工思維解析 -->
+                    <div class="w-full lg:w-2/5 space-y-3">
+                        <span class="text-[10px] font-bold text-cyan-600 bg-cyan-50 px-2 py-1 rounded-md">★ 永續執行計畫簡報</span>
+                        <h3 class="text-lg font-bold text-slate-900">ISO 14064-1 碳盤查與減碳時程規劃</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">
+                            本頁旨在向企業主管說明永續專案的時程與任務分配。我將生硬的條文標準（範疇一、二、三）梳理為層次分明、好讀的「橫向甘特圖式時間軸（Roadmap）」，清楚劃分活動邊界。
+                        </p>
+                        <div class="bg-cyan-50/50 p-3 rounded-xl border border-cyan-100 text-[11px] text-slate-500">
+                            <strong>📊 視覺化核心：</strong>利用「卡片式進度排程」取代生硬條文，凸顯工業工程師在專案時效與合規控管上的嚴謹度。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </div>
 
@@ -554,6 +638,51 @@
         </div>
     </div>
     <script>
+        // ==========================================
+        // 幻燈片播放器控制邏輯 (簡報一)
+        // ==========================================
+        // 1. 宣告這份簡報的所有圖片路徑陣列
+        const p1Slides = [
+            "p1_slide1.png",
+            "p1_slide2.png",
+            "p1_slide3.png",
+            "p1_slide4.png",
+            "p1_slide5.png"
+        ];
+        
+        let p1CurrentIndex = 0; // 預設在第 1 頁（索引為 0）
+
+        // 點擊「下一頁」
+        function nextSlide() {
+            p1CurrentIndex++;
+            // 如果超過最後一頁，就回到第一頁
+            if (p1CurrentIndex >= p1Slides.length) {
+                p1CurrentIndex = 0;
+            }
+            updateSlideView();
+        }
+
+        // 點擊「上一頁」
+        function prevSlide() {
+            p1CurrentIndex--;
+            // 如果低於第一頁，就跳到最後一頁
+            if (p1CurrentIndex < 0) {
+                p1CurrentIndex = p1Slides.length - 1;
+            }
+            updateSlideView();
+        }
+
+        // 更新圖片與頁數文字的函式
+        function updateSlideView() {
+            const imgElement = document.getElementById('p1-img');
+            const counterElement = document.getElementById('p1-counter');
+            
+            // 替換圖片 src
+            imgElement.src = p1Slides[p1CurrentIndex];
+            
+            // 更新頁數顯示 (因為索引從 0 開始，所以文字要 +1)
+            counterElement.innerText = `${p1CurrentIndex + 1} / ${p1Slides.length}`;
+        }
         // 🌟 A. 入口分流控制函式
         function enterEnterprise() {
             // 顯示導覽列與音樂播放器
