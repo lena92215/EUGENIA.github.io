@@ -298,6 +298,9 @@
     </div>
 
 
+   <!-- ========================================== -->
+    <!-- 🌟 私人/個人日常分頁 (Private View) -->
+    <!-- ========================================== -->
     <div id="view-private" class="page-view animate-fade-in hidden flex-grow">
         <section class="pt-36 pb-12 px-6 max-w-4xl mx-auto text-center space-y-8">
             <div class="space-y-3">
@@ -306,23 +309,30 @@
                 <p class="text-xs text-purple-600 font-bold tracking-widest">這裡記錄著我的日常、靈感與生活剪影 ✦</p>
             </div>
 
+            <!-- 私人日常卡片展示牆 -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                <div class="y2k-holo-border-purple p-6 rounded-3xl">
-                    <span class="text-xl">🎧</span>
-                    <h3 class="font-bold text-slate-800 text-sm mt-2 mb-1">My Favorite Playlist</h3>
+                <!-- 卡片 1: 點擊彈出 10 張唱片機歌單 -->
+                <div class="y2k-holo-border-purple p-6 rounded-3xl cursor-pointer hover:scale-[1.01] transition-all group" onclick="openModal('modal-playlist')">
+                    <div class="flex justify-between items-start">
+                        <span class="text-2xl animate-spin" style="animation-duration: 6s;">💿</span>
+                        <span class="text-[9px] text-purple-500 font-bold font-mono group-hover:translate-x-1 transition-transform">TAP TO PLAY ➔</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm mt-3 mb-1">My Favorite Playlist // 點唱機</h3>
                     <p class="text-xs text-slate-600 leading-relaxed">
-                        放鬆時最喜歡聽的歌單！音樂是我的靈魂燃料。妳也可以點擊右下角的 💿 按鈕，聽聽看我網頁的專屬背景音樂喔！
+                        放鬆時最喜歡聽的歌單。收集了 10 張與 《Mystery of Love》 相似，溫柔、空靈、帶有極光般浪漫質感的 Indie Folk 專輯。點擊開啟黑膠點唱機 🎵
                     </p>
                 </div>
+                <!-- 卡片 2: 日常與攝影 -->
                 <div class="y2k-holo-border-pink p-6 rounded-3xl">
                     <span class="text-xl">📸</span>
-                    <h3 class="font-bold text-slate-800 text-sm mt-2 mb-1">Life & Photography</h3>
+                    <h3 class="font-bold text-slate-800 text-sm mt-3 mb-1">Life & Photography</h3>
                     <p class="text-xs text-slate-600 leading-relaxed">
                         喜歡記錄生活中那些閃閃發光的微小瞬間。無論是美食、街景，還是天空的晚霞。
                     </p>
                 </div>
             </div>
 
+            <!-- 返回入口頁按鈕 -->
             <button onclick="backToPortal()" class="mt-8 bg-slate-900 text-white font-y2k text-xs px-6 py-3 rounded-full hover:bg-slate-800 transition-all shadow-md active:scale-95">
                 ◀ 返回選擇入口
             </button>
